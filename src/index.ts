@@ -8,6 +8,8 @@ const app = new Hono();
 // Enable CORS
 app.use("*", cors({ origin: "*", allowMethods: ["GET", "POST", "DELETE"] }));
 
+app.get("/", (c) => c.text("Drive API!"));
+
 app.post("/api/drive/create", handleCreateFile);
 app.delete("/api/drive/delete", handleDeleteFile);
 
