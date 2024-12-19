@@ -16,7 +16,9 @@ app.delete("/api/drive/delete", handleDeleteFile);
 app.post("/api/folder/create", handleCreateFolder);
 app.delete("/api/folder/delete", handleDeleteFolder);
 
-export default {
-  port: 8787,
-  fetch: app.fetch,
-};
+// export default {
+//   port: 8787,
+//   fetch: app.fetch,
+// };
+
+export default app;
